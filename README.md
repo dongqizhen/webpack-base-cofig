@@ -1,8 +1,9 @@
+
+# webpack v4.x 基本配置
+
+[官方文档](https://webpack.js.org)
+
 [TOC]
-
-# webpack v4.x 基本配置 
-
-[官方文档](https://webpack.js.org) 
 
 ## 说明
 
