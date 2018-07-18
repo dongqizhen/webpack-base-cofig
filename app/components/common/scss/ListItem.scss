@@ -1,0 +1,131 @@
+.item {
+    width: 267px;
+    height: 334px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
+    border-radius: 4px;
+    &:hover {
+        cursor: pointer;
+        .proImg img {
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+    }
+    .proImg {
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+        box-sizing: border-box;
+        img {
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+    }
+    .itemText {
+        font-family: "Arial";
+        height: 110px;
+        padding: 17px 22px 10px;
+        %wordWrap {
+            white-space: nowrap;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        %numberValue {
+            font-size: 12px;
+            color: #2A2A2A;
+            margin-left: 4px;
+        }
+        h2 {
+            width: 100%;
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+            @extend %wordWrap;
+            font-family: Arial;
+            font-weight: 600;
+        }
+        .brandAndModel {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 10px;
+            .brandBox {
+                width: 106px;
+                margin-right: 10px;
+                @extend %wordWrap;
+                .brandName {
+                    @extend %numberValue;
+                }
+            }
+            .modelBox {
+                width: 106px;
+                @extend %wordWrap;
+                .modelName {
+                    @extend %numberValue;
+                }
+            }
+        }
+        .saleNumAndPrice {
+            font-family: "Arial";
+            font-size: 13px;
+            color: #666;
+            height: 26px;
+            line-height: 32px;
+            .saleNum {
+                font-weight: 600;
+            }
+            .number {
+                font-size: 13px;
+                color: #019ddd;
+                margin-left: 4px;
+            }
+            .price {
+                height: 26px;
+                line-height: 26px;
+                color: #FB4354;
+                .priceImg {
+                    font-size: 14px;
+                }
+                .priceValue {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .itemName {
+        height: 44px;
+        line-height: 44px;
+        border-top: 1px solid #D8D8D8;
+        padding: 0 22px;
+        position: relative;
+        img {
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            margin-right: 10px;
+            position: absolute;
+            top: 8px;
+        }
+        span {
+            font-size: 14px;
+            color: #666;
+            white-space: nowrap;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 185px;
+            display: block;
+            font-family: Arial;
+            font-weight: 600;
+        }
+    }
+}

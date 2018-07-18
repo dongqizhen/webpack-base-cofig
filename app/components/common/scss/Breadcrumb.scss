@@ -1,0 +1,53 @@
+
+.breadcrumb{
+    width: 1200px;
+    margin: 0 auto;
+    height: 55px;
+    a{
+        text-decoration: none;
+    }
+    li{
+        float: left;
+        height: 100%;
+        line-height: 55px;
+        padding-right: 25px;
+        position: relative;
+        a{
+            font-size: 12px;
+            color: #019DDD;
+            cursor: pointer;
+            display: block;
+            //color: #666666; 
+            &.active{
+                color: #666666;
+            }
+            &:hover{
+                &.active{
+                    cursor: default;
+                }
+            }
+        }
+        span{
+            display: block;
+            height: 25px;
+            padding: 0 14px;
+            margin-top: 15px;
+            line-height: 25px;
+            font-size: 12px;
+            color: #019DDD;
+            border: 1px dotted #019DDD;
+            border-radius: 4px
+        }
+        i{
+            position: absolute;
+            right: 10px;
+            display: block;
+            height: 9px;
+            width: 5px;
+            background: url(../../../assets/images/listSprite.png) no-repeat;
+            background-position: 0 -1px;
+            top: 50%;
+            margin-top: -4.5px;
+        }
+    }
+}

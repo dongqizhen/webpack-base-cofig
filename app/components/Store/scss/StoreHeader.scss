@@ -1,0 +1,156 @@
+.storeHeader {
+    height: 176px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 28px 0;
+    border-top: rgba($color: #D8D8D8, $alpha: 0.48) 1px solid;
+    >img {
+        width: 120px;
+        height: 120px;
+        float: left;
+        margin-right: 37px;
+    }
+    >div {
+        float: left;
+        height: 100%;
+        h2 {
+            font-size: 18px;
+            color: #333333;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 24px;
+            line-height: 24px;
+            box-sizing: border-box;
+            margin-bottom: 24px;
+            >i {
+                //float: left;
+                display: inline-block;
+                height: 14px;
+                width: 33px;
+                background: url("../../../assets/images/storeSprite.png") no-repeat;
+                background-position: -205px -2px;
+                margin-left: 7px;
+                vertical-align: middle;
+                margin-bottom: 2px;
+                margin-right: 39px;
+            }
+            >span {
+                font-size: 12px;
+                color: #666666;
+                display: inline-block;
+                width: 64px;
+                border-radius: 2px;
+                height: 24px;
+                box-sizing: border-box;
+                cursor: pointer;
+                i {
+                    display: inline-block;
+                    width: 14px;
+                    height: 12px;
+                    margin-left: 10px;
+                    margin-right: 6px;
+                    background: url("../../../assets/images/storeSprite.png") no-repeat;
+                    background-position: -29px -41px;
+                    vertical-align: middle;
+                    margin-top: -1px;
+                }
+                &.collect {
+                    border: 1px solid #FB4354;
+                    margin-right: 13px;
+                }
+                &.share {
+                    border: 1px solid #019DDD;
+                    i {
+                        background-position: -86px -41px;
+                    }
+                }
+                &.active {
+                    &.collect {
+                        i {
+                            background-position: 0 -41px;
+                        }
+                    }
+                    &.share {
+                        i {
+                            background-position: -60px -41px;
+                        }
+                    }
+                }
+            }
+        }
+        >div {
+            ul {
+                float: left;
+                li {
+                    margin-bottom: 12px;
+                    font-size: 12px;
+                    color: #333333;
+                    line-height: 16px;
+                    height: 16px;
+                    i {
+                        display: inline-block;
+                        width: 13px;
+                        height: 13px;
+                        background: url(../../../assets/images/storeSprite.png) no-repeat;
+                        background-position: -60px -3px;
+                        margin-right: 8px;
+                        margin-top: -3px;
+                        vertical-align: middle;
+                    }
+                    &:nth-child(2) {
+                        i {
+                            background-position: -88px -3px;
+                        }
+                    }
+                    &:nth-child(3) {
+                        i {
+                            background-position: -116px -3px;
+                        }
+                    }
+                }
+                &.left {
+                    margin-right: 40px;
+                }
+                &.center {
+                    margin-right: 127px;
+                    padding-top: 28px;
+                    li {
+                        &:nth-child(1) {
+                            i {
+                                background-position: -29px -3px;
+                            }
+                        }
+                        &:nth-child(2) {
+                            i {
+                                background-position: -1px -3px;
+                            }
+                        }
+                    }
+                }
+            }
+            span {
+                float: left;
+                width: 103px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-size: 14px;
+                color: #019DDD;
+                border: 1px solid #019DDD;
+                border-radius: 3px;
+                cursor: pointer;
+                margin-top: 41px;
+                i {
+                    display: inline-block;
+                    height: 14px;
+                    width: 13px;
+                    vertical-align: middle;
+                    background: url(../../../assets/images/storeSprite.png) no-repeat;
+                    background-position: -254px 0;
+                    margin-left: 6px;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+    }
+}

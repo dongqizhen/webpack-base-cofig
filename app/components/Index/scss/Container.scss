@@ -1,0 +1,29 @@
+.listBox {
+    .common {
+        width: 1200px;
+        margin: 0 auto;
+        .title {
+            h3 {
+                width: 140px;
+                text-align: center;
+                margin: 80px auto 16px;
+                font-size: 22px;
+                color: #333;
+            }
+            .placeholder {
+                width: 20px;
+                height: 3px;
+                margin: 0 auto;
+                background-color: #019ddd;
+                margin-bottom: 60px;
+            }
+        }
+        ul {
+            width: 1245px;
+            li {
+                margin-right: 44px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

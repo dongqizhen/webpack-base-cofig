@@ -1,0 +1,158 @@
+$relative-font-size: 15px !default;
+$word-color:#333;
+$span-color:#666;
+$else-color:#999;
+$backgroud-color:#f6f6f6;
+$header-color:#019DDD;
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+@function rem($value) {
+    $v: strip-unit($value);
+    $relative: strip-unit($relative-font-size);
+    @return $v/$relative+rem;
+}
+
+$relative-font-size: 15px;
+@function remPx($value) {
+    @return $value * $relative-font-size;
+}
+
+$header-height:rem(53);
+@mixin flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin justify-content($shadow...) {
+    -webkit-justify-content: $shadow;
+    -moz-justify-content: $shadow;
+    -ms-justify-content: $shadow;
+    -o-justify-content: $shadow;
+    justify-content: $shadow;
+}
+
+@mixin align-items($layout...) {
+    -webkit-align-items: $layout;
+    -moz-align-items: $layout;
+    -ms-align-items: $layout;
+    -o-align-items: $layout;
+    align-items: $layout;
+}
+
+@mixin flex-wrap($wrap...) {
+    -webkit-flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+    -o-flex-wrap: $wrap;
+    -moz-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+
+@mixin flex-direction($direction:row) {
+    -webkit-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+    -o-flex-direction: $direction;
+    -moz-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+@mixin box-sizing($borderBox...) {
+    -webkit-box-sizing: $borderBox;
+    -moz-box-sizing: $borderBox;
+    box-sizing: $borderBox;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+@mixin transform($arg...) {
+    transform: $arg;
+    -ms-transform: $arg;
+    /* IE 9 */
+    -moz-transform: $arg;
+    /* Firefox */
+    -webkit-transform: $arg;
+    /* Safari 和 Chrome */
+    -o-transform: $arg;
+    /* Opera */
+}
+
+@mixin inputColor($color:#cbcbcb) {
+    //chrome谷歌浏览器，Safari苹果浏览器
+    input::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: $color;
+    }
+    //firefox火狐浏览器
+    input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: $color;
+    }
+    input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: $color;
+    }
+    //IE浏览器
+    input:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: $color;
+    }
+}
+
+@mixin textareaColor($color:#cbcbcb) {
+    //chrome谷歌浏览器，Safari苹果浏览器
+    textarea::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: $color;
+    }
+    //firefox火狐浏览器
+    textarea:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: $color;
+    }
+    textarea::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: $color;
+    }
+    //IE浏览器
+    textarea:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: $color;
+    }
+}
+
+@mixin hidescrollbar {
+     ::-webkit-scrollbar {
+        width: 0px;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@mixin animation($arg...) {
+    animation: $arg;
+    -ms-animation: $arg;
+    /* IE 10 */
+    -moz-animation: $arg;
+    /* Firefox */
+    -webkit-animation: $arg;
+    /* Safari 和 Chrome */
+    -o-animation: $arg;
+    /* Opera */
+}
+
+@mixin transition($arg...)  {
+    transition: $arg;
+    -ms-transition: $arg;
+    /* IE 10 */
+    -moz-transition: $arg;
+    /* Firefox */
+    -webkit-transition: $arg;
+    /* Safari 和 Chrome */
+    -o-transition: $arg;
+    /* Opera */
+}

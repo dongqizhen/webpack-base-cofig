@@ -1,0 +1,97 @@
+.ListNav{
+    width: 1200px;
+    margin: 0 auto;
+    border-top: 2px solid #EBEBEC;
+    >ul{
+        height: 67px;
+        padding: 18px 0;
+        
+        
+        float: left;
+        li{
+            float: left;
+            height: 31px;
+            line-height: 31px;
+            width: 136px;
+            margin-right: 2px;
+            background: #EBEBEC;
+            border-radius: 3px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 12px;
+            color: #737373;
+            position: relative;
+            &.active{
+                background: #019DDD;
+                color: #fff;
+                &:hover{
+                    background: #019DDD;
+                    color: #fff;
+                }
+                i{
+                    height: 3px;
+                    background: #0382B7;
+                    position: absolute;
+                    display: block;
+                    width: 136px;
+                    left: 0;
+                    bottom: 0;
+                    border-bottom-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+                strong{
+                    position: absolute;
+                    display: block;
+                    width: 7px;
+                    height: 3px;
+                    bottom: -3px;
+                    background: url(../../../assets/images/listSprite.png) no-repeat;
+                    background-position: -131px -4px;
+                    left: 50%;
+                    margin-left: -3.5px;
+                }
+            }
+            &:hover{
+                background-color: rgba(55, 61, 65, 0.8);
+                color: #fff;
+            }
+        }
+    }
+    .StoreOrProduct{
+        float: right;
+        width: 131px;
+        height: 67px;
+        padding: 18px 0;
+        ul{
+            
+            li{
+                float: left;
+                width: 54px; 
+                font-size: 12px;
+                color: #999999;
+                //height: 16px;
+                line-height: 12px;
+                cursor: pointer;
+                margin-top: 8px;
+                &:first-child{
+                    margin-right: 23px;
+                }
+                span{
+                    float: left;
+                    height: 12px;
+                    width: 12px;
+                    margin-right: 4px;
+                    margin-top: 1px;
+                    background: url(../../../assets/images/listSprite.png) no-repeat;
+                    background-position: -55px 0;
+                }
+                &.active{
+                    color: #333333;
+                    span{
+                        background-position: -34px 0;
+                    }
+                }
+            }
+        }
+    }
+}

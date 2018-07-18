@@ -1,0 +1,325 @@
+@import "../../../assets/scss/_commomScss";
+@include inputColor(#666666);
+.productDetails {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        border-top: rgba($color: #D8D8D8, $alpha: 0.48) solid 1px;
+    }
+    .magnifier_container {
+        min-height: 513px;
+        position: relative;
+        .left {
+            float: left;
+            width: 520px + 25px + 384px;
+            margin-right: 60px;
+            .magnifier {
+                position: relative;
+                width: 384px;
+                .magnifier-thumb-wrapper {
+                    width: 384px;
+                    img {
+                        width: 384px;
+                        height: 380px;
+                    }
+                    #thumb-lens {
+                        background: none !important;
+                    }
+                }
+                #preview {
+                    height: 540px;
+                    width: 540px;
+                    position: absolute;
+                    left: 384px;
+                    top: 0;
+                }
+                .SwiperBox {
+                    padding: 15px 0;
+                    span {
+                        float: left;
+                        width: 20px;
+                        height: 45px;
+                        cursor: pointer;
+                    }
+                    .swiper-container {
+                        height: 45px;
+                        float: left;
+                        width: 344px;
+                        ul {
+                            li {
+                                height: 45px;
+                                //width: 100%;
+                                width: 45px;
+                                float: left;
+                                img {
+                                    height: 100%;
+                                    width: 45px;
+                                    cursor: pointer;
+                                    // margin-right: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .addCar {
+                position: absolute;
+                width: 520px;
+                left: 410px;
+                top: 0;
+                font-size: 18px;
+                color: #333333;
+                line-height: 24px;
+                >h2 {
+                    word-break: break-all;
+                    margin-bottom: 6px;
+                    span {
+                        background: rgba(1, 157, 221, 0.12);
+                        border: 1px solid #019DDD;
+                        display: inline-block;
+                        //position: absolute;
+                        height: 18px;
+                        width: 32px;
+                        font-size: 12px;
+                        color: #019DDD;
+                        text-align: center;
+                        line-height: 16px;
+                        margin-right: 6px;
+                        vertical-align: middle;
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+            .price_box {
+                height: 90px;
+                .price {
+                    height: 52px;
+                    background: rgba(1, 157, 221, 0.08);
+                    border: rgba(1, 157, 221, 0.20) 1px solid;
+                    border-left: 0;
+                    border-right: 0;
+                    line-height: 50px;
+                    padding-left: 7px;
+                    font-size: 24px;
+                    color: #019DDD;
+                    a {
+                        font-size: 16px;
+                        color: #019DDD;
+                        //font-weight: 600;
+                        margin-right: 6px;
+                    }
+                    span {
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #AAAAAA;
+                        margin-right: 30px;
+                        margin-bottom: 6px;
+                        vertical-align: middle;
+                    }
+                }
+                >ul {
+                    height: 38px;
+                    background: rgba(1, 157, 221, 0.04);
+                    line-height: 38px;
+                    padding-left: 60px;
+                    li {
+                        float: left;
+                        font-size: 12px;
+                        color: #999999;
+                        &:first-child {
+                            margin-right: 47px;
+                            i {
+                                display: inline-block;
+                                height: 12px;
+                                width: 12px;
+                            }
+                        }
+                        span {
+                            font-size: 12px;
+                            color: #019DDD;
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+            .combo {
+                height: 68px;
+                border-bottom: #E9E9E9 1px solid;
+                line-height: 28px;
+                padding: 20px 0;
+                padding-left: 7px;
+                span {
+                    float: left;
+                    font-size: 12px;
+                    color: #AAAAAA;
+                    margin-right: 17px;
+                }
+                ul {
+                    float: left;
+                    li {
+                        float: left;
+                        width: 75px;
+                        height: 28px;
+                        border: 1px solid #AAAAAA;
+                        font-size: 12px;
+                        color: #666666;
+                        text-align: center;
+                        margin-left: 13px;
+                        line-height: 26px;
+                        cursor: pointer;
+                        &:hover {
+                            border-color: #019DDD;
+                        }
+                        &.active {
+                            border-color: #019DDD;
+                        }
+                    }
+                }
+            }
+            .Stock {
+                height: 80px;
+                border-bottom: #E9E9E9 1px solid;
+                padding: 20px 0;
+                padding-left: 7px;
+                font-size: 12px;
+                color: #666666;
+                line-height: 39px;
+                >span {
+                    float: left;
+                    font-size: 12px;
+                    color: #AAAAAA;
+                    margin-right: 30px;
+                    height: 100%;
+                    line-height: 39px;
+                }
+                .Chooseamount {
+                    float: left;
+                }
+                input {
+                    float: left;
+                    width: 45px;
+                    height: 39px;
+                    line-height: 39px;
+                    text-align: center;
+                    border: 1px solid #DDDDDD;
+                    font-size: 14px;
+                    //color: #666666;
+                }
+                p {
+                    float: left;
+                    width: 21px;
+                    margin-right: 19px;
+                    span {
+                        display: block;
+                        width: 21px;
+                        height: 19.5px;
+                        line-height: 19.5px;
+                        text-align: center;
+                        border: 1px solid #DDDDDD;
+                        background: #F6F6F6;
+                        border-left: 0;
+                        color: #333333;
+                        cursor: pointer;
+                        &:first-child {
+                            border-bottom: 0;
+                        }
+                        &.disabled {
+                            color: #999999;
+                            cursor: not-allowed;
+                        }
+                    }
+                }
+            }
+            .btn {
+                background: #019DDD;
+                border-radius: 3px;
+                width: 256px;
+                height: 52px;
+                color: #fff;
+                line-height: 52px;
+                text-align: center;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+        }
+        .right {
+            float: left;
+            width: 1200px - (520px + 25px + 384px) - 60px;
+            overflow: hidden;
+            .store {
+                cursor: pointer;
+                a {
+                    display: block;
+                    border: 1px solid #E9E9E9;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 153px;
+                        display: block;
+                    }
+                    i {
+                        display: block;
+                        height: 42px;
+                        width: 42px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        background: url(../../../assets/images/verified.png) no-repeat;
+                        background-position: 0 0;
+                    }
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        padding: 32px 23px;
+                        background: rgba(51, 51, 51, 0.84);
+                        position: absolute;
+                        left: 0px;
+                        top: 0;
+                        display: none;
+                        li {
+                            font-size: 12px;
+                            color: #FFFFFF;
+                            word-break: break-all;
+                            line-height: 18px;
+                            span {
+                                float: left;
+                            }
+                            p {
+                                float: left;
+                                width: 163px - 36px;
+                            }
+                            &:first-child {
+                                margin-bottom: 16px;
+                            }
+                        }
+                    }
+                    &:hover {
+                        ul {
+                            display: block;
+                            animation: rollIn .5s;
+                        }
+                    }
+                }
+                >p {
+                    background: #FFFFFF;
+                    border: 1px solid #E9E9E9;
+                    padding: 8px 14px;
+                    font-size: 14px;
+                    color: #333333;
+                    border-top: 0;
+                    text-align: center;
+                }
+                >span {
+                    display: block;
+                    background: rgba(1, 157, 221, 0.10);
+                    height: 38px;
+                    font-size: 14px;
+                    color: #019DDD;
+                    text-align: center;
+                    line-height: 38px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

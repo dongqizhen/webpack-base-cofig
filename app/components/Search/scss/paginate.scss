@@ -1,0 +1,128 @@
+.paginationContainer {
+    min-height: 35px;
+    width: 1202px;
+    margin: 40px auto;
+    margin-top: 10px;
+    text-align: center;
+    padding-left: 2px;
+    ul.pagination {
+        height: 100%;
+        margin: 0 auto;
+        display: inline-block;
+        overflow: hidden;
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+        }
+        li {
+            float: left;
+            line-height: 35px;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #E9E9E9;
+            color: #666666;
+            font-size: 14px;
+            border-left: none;
+            &.previous,
+            &.next {
+                border-left: 1px solid #E9E9E9;
+                width: 73px;
+                margin: 0px 6px;
+                &.disabled {
+                    color: #CCCCCC;
+                    &:hover {
+                        background-color: #fff;
+                        color: #CCCCCC;
+                        border: 1px solid #E9E9E9;
+                    }
+                }
+                span {
+                    //vertical-align: middle;
+                    position: relative;
+                    i {
+                        display: inline-block;
+                        //position: absolute;
+                        width: 4px;
+                        height: 7px;
+                        background: url(../../../assets/images/listSprite.png) no-repeat;
+                        background-position: -77px -2px;
+                        margin-right: 5px;
+                        margin-bottom: 1px;
+                    }
+                }
+            }
+            &.previous {
+                span {
+                    i {
+                        background-position: -105px -2px;
+                    }
+                }
+                &.disabled {
+                    i {
+                        background-position: -77px -2px;
+                    }
+                }
+                &:hover {
+                    span {
+                        i {
+                            background-position: -77px -2px;
+                        }
+                    }
+                }
+            }
+            &.next {
+                span {
+                    i {
+                        background-position: -91px -2px;
+                        margin-right: 0px;
+                        margin-left: 5px;
+                    }
+                }
+                &.disabled {
+                    i {
+                        background-position: -118px -2px;
+                    }
+                }
+                &:hover {
+                    span {
+                        i {
+                            background-position: -118px -2px;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                background-color: rgba(55, 61, 65, 0.8);
+                color: #fff;
+                border: rgba(55, 61, 65, 0.8) 1px solid;
+            }
+            &.previous {
+                margin-left: 0;
+            }
+            &.active {
+                background: #019DDD;
+                color: #fff;
+                border: #019DDD 1px solid;
+            }
+            &:nth-child(2) {
+                border-left: 1px solid #E9E9E9;
+            }
+            a {
+                display: block;
+                line-height: 35px;
+            }
+            &.break-me {
+                border-top: none;
+                border-bottom: none;
+                &:hover {
+                    background-color: #fff;
+                    color: #666;
+                    border-left: none;
+                    border-right: 1px solid #E9E9E9;
+                }
+            }
+        }
+    }
+}
